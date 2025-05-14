@@ -1,0 +1,101 @@
+body {
+    background: rgb(91, 75, 75);
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+    background-image: url(images/back.webp);
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    height: 400px;
+    text-align: center;
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li:hover{
+    background: yellow;
+}
+nav li {
+    display: inline;
+    margin-right: 20px;
+    background: white;
+    border-radius: 3px;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: xx-small;
+    margin-top: 40px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+}
+header .logo a{
+    background-image:url("images/logo3.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 80px;
+    top: -40px;
+    text-indent: -999999999px;
+}
+
+/* FEATURE-BOX */
+
+.feature-box {
+    background: white;
+    color: rgb(12, 11, 11);
+    margin: 1px 0 1px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.feature-box figure {
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+}
+.feature-box img {
+   border: 1px solid white;
+   border-radius: 50%;
+   box-shadow: rgb(12, 12, 12) 0 0 10px;
+   width: 200px; 
+}
+
+/* FOOTER */
+
+footer {
+    background: black;
+    color: rgb(169, 158, 158);
+    padding: 10px 20px;
+    font-size: small;
+    text-align: center;
+}
+
+/* Media Quiries */
+@media screen and (min-width: 401px) and (max-width: 800px) {
+    .feature-box{
+        background: pink;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .feature-box{
+        background: red;
+    }
+}
