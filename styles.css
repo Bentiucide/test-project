@@ -16,6 +16,11 @@ header {
     padding: 20px;
     height: 400px;
     text-align: center;
+}
+
+header .mobile {
+    display: none;
+}
 
 nav ul {
     margin: 0;
@@ -34,14 +39,14 @@ nav li {
 nav a{
     text-decoration: none;
     text-transform: uppercase;
-    font-size: xx-small;
+    font-size: medium;
     margin-top: 40px;
 }
 nav a:hover{
     text-decoration: underline;
 }
 
-}
+
 header .logo a{
     background-image:url("images/logo3.png");
     background-size: 300px;
@@ -54,6 +59,13 @@ header .logo a{
     text-indent: -999999999px;
 }
 
+/*Responsive Rules*/
+@media screen and (max-width: 715px) {
+    header {height: 200px;}
+    header .mobile{display: inline-block;}
+    header .desktop{display:none;}
+}
+
 /* FEATURE-BOX */
 
 .feature-box {
@@ -63,6 +75,7 @@ header .logo a{
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .feature-box figure {
     margin: auto;
@@ -87,15 +100,9 @@ footer {
     text-align: center;
 }
 
-/* Media Quiries */
-@media screen and (min-width: 401px) and (max-width: 800px) {
+/*responsive design
+@media screen and (max-width: 715px){
     .feature-box{
-        background: pink;
+        display: block;
     }
-}
-
-@media screen and (max-width: 400px) {
-    .feature-box{
-        background: red;
-    }
-}
+}*/
